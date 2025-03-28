@@ -1,0 +1,57 @@
+{
+	"name": "@jagaad/strapi-utils-v4",
+	"version": "0.0.0",
+	"description": "A collection of JavaScript/TypeScript utility functions and helpers for Jagaad projects",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 0",
+		"prepare": "husky",
+		"build": "tsup",
+		"prepublishOnly": "npm run build",
+		"release": "np"
+	},
+	"engines": {
+		"node": ">=20",
+		"npm": ">=10"
+	},
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"keywords": [
+		"jagaad",
+		"utils",
+		"utility",
+		"functions",
+		"helpers",
+		"strapi"
+	],
+	"author": "Jagaad <contact@jagaad.com>",
+	"license": "MIT",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jagaad/strapi-utils-v4.git"
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"@jagaad/prettier-config": "^1.1.1",
+		"@jagaad/tsconfig-bases": "^0.2.0",
+		"@strapi/database": "^4.25.22",
+		"@strapi/strapi": "^4.25.22",
+		"@strapi/utils": "^4.25.22",
+		"@total-typescript/ts-reset": "^0.6.1",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.0",
+		"np": "^10.2.0",
+		"prettier": "^3.5.3",
+		"tsup": "^8.4.0",
+		"typescript": "^5.8.2"
+	},
+	"dependencies": {
+		"@jagaad/utils": "^0.8.0",
+		"type-fest": "^4.37.0"
+	}
+}
